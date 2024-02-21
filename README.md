@@ -1,4 +1,3 @@
-##Ecommerce With Golang Project By Akhil Sharma
 ```bash
 docker-compose up -d
 go run .\cmd\ecommerce\main.go
