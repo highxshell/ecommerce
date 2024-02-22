@@ -144,16 +144,19 @@ Response:
 
 - **Adding the Products to the Cart (GET REQUEST)**
 http://localhost:8000/addtocart?id=65d5f327e7dd3620df0254ba&userID=65d5f24ee7dd3620df0254b8
+
 Response: "Successfully Added to the cart"
 
 - **Removing Item From the Cart (GET REQUEST)**
 
 http://localhost:8000/removeitem?id=65d5f327e7dd3620df0254ba&userID=65d5f24ee7dd3620df0254b8
+
 Response: "Successfully removed from cart"
 
 - **Listing the item in the users cart (GET REQUEST) and total price**
 
 http://localhost:8000/listcart?id=65d5f24ee7dd3620df0254b8
+
 Response:
 
 ```json
@@ -184,7 +187,9 @@ Response:
 
 - **Addding the Address (POST REQUEST)**
 http://localhost:8000/addaddress?id=65d5f24ee7dd3620df0254b8
+
 The Address array is limited to two values home and work address more than two address is not acceptable
+
 ```json
 {
   "house_name": "8",
@@ -218,15 +223,18 @@ http://localhost:8000/editworkaddress?id=65d5f24ee7dd3620df0254b8
 
 http://localhost:8000/deleteaddresses?id=xxxxxxxxxuser_idxxxxxxxxxxxxx
 delete both addresses
+
 Response: "succesfully deleted"
 
 - **Cart Checkout Function and placing the order(GET REQUEST)**
 After placing the order the items have to be deleted from cart functonality added
 http://localhost:8000/cartcheckout?id=65d5f24ee7dd3620df0254b8
+
 Response: "Successfully Placed the order"
 
 - **Instantly Buying the Products(GET REQUEST)**
 http://localhost:8000/instantbuy?userid=65d5f24ee7dd3620df0254b8&pid=6538b06cccc7dcf403e817d5
+
 Response: "Successully placed the order"
 
 ```json
